@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix | CLONE</title>
+    <link rel="stylesheet" href="CSS/home_page.css"/>
+    <link rel="stylesheet" href="CSS/stylee.css"/>
+    <script src="JS/script2.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+    <div class="nav">
+      <div class="nav__left">
+        <a href="index.html">
+        <img class="nav_logo" src="IMAGES/logo.png" alt=""></a>
+      </div>
+    </div>
+    
+</header>
+    <!-- banner -->
+    <header id="banner">
+      <div id="banner__contents">
+        <h1 id="banner__title"></h1>
+        <div id="banner__buttons">
+        <button id="banner__button">Play</button>
+        <button id="banner__button">More Info</button>
+      </div>
+      <p id="banner__description"></p>
+      </div>
+      <div id="banner__fadeBottom"></div>
+    </header>
+
+    <!-- row -->
+    <div id="headrow">
+      <div class="row">
+        <h2 class="row__title"></h2>
+        <div class="row__posters"> </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener("scroll",function(){
+
+        var nav = document.querySelector(".nav");
+        nav.classList.toggle("active", window.scrollY > 0);
+      }) 
+    </script> 
+
+<br>
+<footer>
+    
+        
+    <div class="footer-section">
+    <div class="footer-item">
+        <h2>Company</h2>
+        <p><a href="https://about.netflix.com/en"> About Us</a></p>
+        <p><a href=""> Contact Us</a></p>
+        <p><a href=""> Our Services</a></p>
+        <p><a href=""> Privacy Policy</a></p>
+    </div>
+    <div class="footer-item">
+        <h2>Get Help </h2>
+        <p><a href=""> FAQ</a></p>
+        <p><a href=""> Subscriptions </a></p>
+        <p><a href=""> Policy </a></p>
+        <p><a href=""> Payment Options </a></p>
+    </div>
+    <div class="footer-item">
+        <h2>Media Centre</h2>
+        <p><a href=""> Blogs </a></p>
+        <p><a href=""> Watch </a></p>
+        <p><a href=""> only on Netflix </a></p>
+        <p><a href="https://fast.com/"> Speed Test </a></p>
+    </div>
+    <div class="footer-item social">
+      <h2> Follow Us </h2>
+        <p><a href="https://www.instagram.com/netflix_in/">Instagram</a></p>
+        <p><a href="https://www.facebook.com/NetflixIN/?brand_redir=475822799216240"> Facebook </a></p>
+        <p><a href="https://twitter.com/NetflixIndia"> Twitter </a></p>
+        <p><a href="https://www.youtube.com/netflix"> YouTube </a></p>
+        <p><a href="https://in.pinterest.com/Netflix/"> Pinterest</a></p>
+  </div>
+</div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+
+}
+.featured {
+    padding: 50px 5%;
+}
+
+.featured-content {
+    display: flex;
+    overflow: auto;
+}
+
+.content-item {
+    margin-right: 20px;
+}
+
+.content-item img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: rgba(148, 10, 10, 0.932);
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.footer-section {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    background-color: rgb(11, 11, 11);
+}
+
+.footer-section h2 {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footer-section h2::after {
+    content: '';
+    width: 4rem;
+    height: .2rem;
+    background: #e65b00;
+    position: absolute;
+    top: 2.5rem;
+    left: 0;
+}
+
+.footer-section p {
+    transition: all .2s linear;
+    margin-bottom: .6em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-section p:hover {
+    transition: all .2s linear;
+    transform: translateX(4px);
+}
+
+.footer-section a:hover {
+    color: #f46d13;
+}
+
+.footer-item {
+    margin: 1rem;
+}
+
+.footer-item ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.footer-item li {
+    margin-right: 1rem;
+}
+
+.social ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.social ul li:hover {
+    color: #e65b00;
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+
+@media screen and (max-width: 320px) {
+    .footer-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+}
